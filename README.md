@@ -4,6 +4,8 @@ Only works with the dashboard version / branch of jesse.
 
 The config.yml should be self-explainatory.
 
+Check jesse-hyperactive.log for errors during optimization.
+
 # Installation
 
 ```sh
