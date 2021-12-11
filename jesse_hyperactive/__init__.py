@@ -1,4 +1,5 @@
 import csv
+import itertools
 import logging
 import os
 import pathlib
@@ -75,10 +76,10 @@ def run() -> None:
 
     search_space = get_search_space(hp_dict)
 
-    # Later use actual search space combinations to determin n_iter
-    # keys, values = zip(*search_space.items())
-    # combinations = [dict(zip(keys, v)) for v in itertools.product(*values)]
-    # combinations_count = len(combinations)
+    # Later use actual search space combinations to determin n_iter / population size?
+    #combinations_count = 1
+    #for value in search_space.values():
+        #combinations_count *= len(value)
 
     mem = None
 
