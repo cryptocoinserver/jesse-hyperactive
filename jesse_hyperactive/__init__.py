@@ -304,7 +304,7 @@ def backtest_function(start_date, finish_date, hp, cfg):
         'warm_up_candles': cfg['warm_up_candles']
     }
 
-    backtest_data = backtest(config, route, extra_routes, candles, hp)['metrics']
+    backtest_data = backtest(config, route, extra_routes, candles, hyperparameters = hp)['metrics']
 
     if backtest_data['total'] == 0:
         backtest_data = empty_backtest_data
